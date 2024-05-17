@@ -15,14 +15,11 @@ export const Header = () => {
   return (
     <header className="text-zinc-200">
       <div className="bg-slate-800">
-        <div className="flex items-center justify-center">
           <div className="container">
             <LogoArea />
           </div>
-        </div>
       </div>
       <div className="bg-slate-800  md:bg-slate-700">
-        <div className="flex items-center justify-center">
           <div className="container">
             <nav>
               <div className="flex">
@@ -30,7 +27,7 @@ export const Header = () => {
                   <Logo />
                 </div>
                   <MobileMenu/>
-                <div className="hidden md:flex">
+                <div className="hidden md:flex z-50">
                   <MenuItem to={"/home"} label={"Homepage"} />
                   <MenuItemWithSubmenu
                     to={"/about"}
@@ -42,7 +39,6 @@ export const Header = () => {
               </div>
             </nav>
           </div>
-        </div>
       </div>
     </header>
   );

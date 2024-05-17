@@ -35,7 +35,7 @@ export const MobileMenu = () => {
         <div className="w-4 bg-zinc-200 h-[2px] mt-1 rounded-full group-open:w-8 group-open:bg-amber-200 transition-all ease-in delay-150"></div>
       </div>
       <div
-        className={`absolute rounded-b-md p-4 left-0  w-full top-24  bg-gray-950/90 ${
+        className={`absolute z-50 rounded-b-md p-4 left-0  w-full top-24  bg-gray-950/90 ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -60,7 +60,7 @@ export const MobileMenu = () => {
               />
             </div>
           </div>
-          <div className="hidden group-open:block rounded-l  bg-gray-950/10 left-0  p-4 w-full">
+          <div className="hidden group-open:block rounded-l  left-0  p-4 w-full">
             <Link
               className="hover:text-amber-200 p-4 block uppercase"
               to={"about"}
